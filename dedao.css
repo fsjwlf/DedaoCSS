@@ -1,0 +1,56 @@
+@-moz-document domain("dedao.cn") {
+/* 得到首页 */
+* {font-family:"仓耳今楷03", "HYQihei 55S" !important;text-shadow: 0.1px 0.1px 0.1px #5F5F5F;}
+
+.home-header-nav,.home-header-logo, .update-reminder,.avatar-container,.iget-footer, .search-btn {display: none !important;}  /* 顶栏底栏精简 */
+.recommend-module{display:none;}  /* 去除热门搜索 */
+.home-banner,.home-search,.home-live,.home-course,.home-free-course, .home-elevator-wrap, .module-subtitle {display: none !important;}  /* 主页栏目精简 */
+.iget-common-b9.button-module{display: none !important;}  /* 去除右侧置顶 */
+.ebook-score,.ebook-score-num,.course-score-learner {display: none !important;}  /* 全部分类精简 */
+.home-search-control-wrap{padding: 15px 20px !important;}  /* 搜索栏位置 */
+.iget-header .home-search-control-wrap .iget-header-search-module{top: 60px !important;left:20px; padding:0;}    /* 搜索结果位置 */
+
+/* 已购 */
+.bought-top-heading-tab, .source-card-subtitle, .course-author, .course-num, .progress-bar-container, .course-progress, .source-card-cover, .ebook-other-info{display: none !important;}
+.source-card-container{height: 60px !important;margin:0px 10px;box-shadow: 0 0 10px #aaa !important;}
+.source-card-content{max-width:calc(100%) !important;width:calc(100%) !important;}
+}
+
+@-moz-document url-prefix("https://www.dedao.cn/course/") {
+/* 得到课程 */
+
+.home-header-main {display: none !important;}  /* 去除顶部搜索框 */
+.iget-course-detail {padding-top: 10px !important;}
+.lesson-detail, .catalog-box-course, .right-content, .tab-head,.subscribe-progress, .last-learn::before {display: none !important;}  /* 精简页面 */
+.course-body {margin-top:0px !important;}
+.last-learn {top:0 !important; left:100px !important;}  /* 继续学习 */
+.lesson-title {color: black !important;}/* 课名颜色 */
+.single-content{height: 40px;padding: 10px 10px !important;}  /* 课名 */
+
+/* 课程内页 */
+.artical-usage-info, .article-info, .article-cover, .toolbar-insert-topic, .attention, .pageControl, .dd-audio, .letter, .my-comment,  .message-v2{display: none !important;}
+.iget_rich-text-panel__small .header-2 {padding-top:40px;font-size: 26px;}  /* 标题 */
+.iget_rich-text-panel--container .editor-show p{line-height:2.25 !important;padding-top:40px;font-size:22px !important;}  /* 文稿 */
+.iget-articles{background:#fff;}  /* 背景 */
+.blackboard{background:black !important;}  /* 划重点背景 */
+line {stroke-width: 3px !important;}  /* 划线 */
+
+}
+
+@-moz-document url-prefix("https://www.dedao.cn/ebook/") {
+/* 得到电子书 */
+.iget-reader-keyobard-guide-button, .book-title,
+.set-tool-box-font-tip, .set-tool-box-header, .reader-set-font-box, 
+.right-button-group .tool-margin-left:nth-of-type(3), 
+.right-button-group .tool-margin-left:nth-of-type(4), 
+.right-button-group .tool-margin-left:nth-of-type(5),
+.left-button-group .reader-tool-button:nth-of-type(5){display: none !important;}
+.iget-reader .iget-reader-footer{height: 0;}
+
+html[data-theme='normal'] {--bg-f0f0f0: #f6f6f6;}  /* 默认背景 */
+line {stroke-width: 3px !important;}  /* 划线 */
+
+.iget-reader-catalog-bookinfo, .iget-reader-catalog-read-info, .iget-reader-catalog-separate {display:none !important;}  /* 目录 */
+.iget-reader-catalog-content .iget-common-f4 {padding: 0 0 0 59px !important;}
+.iget-common-f4::before {display:none;}
+}
