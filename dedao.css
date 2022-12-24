@@ -29,12 +29,11 @@
 
 /* 课程内页 */
 .artical-usage-info, .article-info, .article-cover, .toolbar-insert-topic, .attention, .pageControl, .dd-audio, .letter, .my-comment,  .message-v2{display: none !important;}
-.iget_rich-text-panel__small .header-2 {padding-top:40px;font-size: 26px;}  /* 标题 */
-.iget_rich-text-panel--container .editor-show p{line-height:2.25 !important;padding-top:40px;font-size:22px !important;}  /* 文稿 */
+.iget_rich-text-panel__small .header-2 {padding-top:40px;font-size: 24px;}  /* 标题 */
+.iget_rich-text-panel--container .editor-show p{line-height:2.25 !important;padding-top:40px;font-size:18px !important;}  /* 文稿 */
 .iget-articles{background:#fff;}  /* 背景 */
 .blackboard{background:black !important;}  /* 划重点背景 */
-line {stroke-width: 3px !important;}  /* 划线 */
-
+line {stroke:#f7ff8f !important; stroke-width: 20px !important; transform: translate(0,-16px);}  /* 划线 */
 }
 
 @-moz-document url-prefix("https://www.dedao.cn/ebook/") {
@@ -48,7 +47,9 @@ line {stroke-width: 3px !important;}  /* 划线 */
 .iget-reader .iget-reader-footer{height: 0;}
 
 html[data-theme='normal'] {--bg-f0f0f0: #f6f6f6;}  /* 默认背景 */
-line {stroke-width: 3px !important;}  /* 划线 */
+line {stroke:#f7ff8f !important; stroke-width: 20px !important; transform: translate(0,-12px);}  /* 划线 */
+div {z-index:30;}  /* 文字在划线上方 */
+
 
 .iget-reader-catalog-bookinfo, .iget-reader-catalog-read-info, .iget-reader-catalog-separate {display:none !important;}  /* 目录 */
 .iget-reader-catalog-content .iget-common-f4 {padding: 0 0 0 59px !important;}
